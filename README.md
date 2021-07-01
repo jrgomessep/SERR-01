@@ -27,6 +27,10 @@ Andar um metro para trás
 ```
 rostopic pub -1 mover std_msgs/Float64 -- -1000
 ```
+Parar
+```
+rostopic pub -1 parar std_msgs/Empty
+```
 Girar 60 graus a esquerda
 ```
 rostopic pub -1 girar std_msgs/Float64 -- 60
