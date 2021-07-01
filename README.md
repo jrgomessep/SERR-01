@@ -14,3 +14,12 @@ Por Exemplo, para a plataforma robótica móvel se mover um metro para frente, �
     
   Abra um segundo terminal para enviar a mensagem, e execute o comando: 
     rostopic pub -1 mover std_msgs/Float64 1000
+    
+    
+Lista de Comandos:
+    Andar um metro a frente
+      rostopic pub -1 mover std_msgs/Float64 1000
+      Obs.: note que a unidade de medida está em milimetros.
+    Girar 60 graus a esquerda
+      rostopic pub -1 girar std_msgs/Float64 60
+      
