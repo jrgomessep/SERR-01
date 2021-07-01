@@ -17,20 +17,33 @@ Por Exemplo, para a plataforma robótica móvel se mover um metro para frente, �
     
     
 Lista de Comandos:
-    Andar um metro a frente
-      rostopic pub -1 mover std_msgs/Float64 -- 1000
-      Obs.: note que a unidade de medida está em milimetros.
-    Andar um metro para trás
-      rostopic pub -1 mover std_msgs/Float64 -- -1000
-    Girar 60 graus a esquerda
-      rostopic pub -1 girar std_msgs/Float64 -- 60
-    Girar 60 graus a direita
-      rostopic pub -1 girar std_msgs/Float64 -- -60
-    Setar valor PWM geral 0-255
-      rostopic pub -1 setPwmLhRh std_msgs/Float64 -- 150
-    Setar valor PWM motor direito 0-255
-      rostopic pub -1 setPwmRh std_msgs/Float64 -- 150
-    Setar valor PWM motor esquerdo 0-255
-      rostopic pub -1 setPwmLh std_msgs/Float64 -- 150
-          
-      
+Andar um metro a frente
+```
+rostopic pub -1 mover std_msgs/Float64 -- 1000
+```
+Obs.: note que a unidade de medida está em milimetros.
+
+Andar um metro para trás
+```
+rostopic pub -1 mover std_msgs/Float64 -- -1000
+```
+Girar 60 graus a esquerda
+```
+rostopic pub -1 girar std_msgs/Float64 -- 60
+```
+Girar 60 graus a direita
+```
+rostopic pub -1 girar std_msgs/Float64 -- -60
+```
+Setar valor PWM geral 0-255
+```
+rostopic pub -1 setPwmLhRh std_msgs/Float64 -- 150
+```
+Setar valor PWM motor direito 0-255
+```
+rostopic pub -1 setPwmRh std_msgs/Float64 -- 150
+```
+Setar valor PWM motor esquerdo 0-255
+```
+rostopic pub -1 setPwmLh std_msgs/Float64 -- 150
+```
